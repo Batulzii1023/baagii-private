@@ -16,3 +16,23 @@ You can view the full list of project from this course [here](https://github.com
 I found a couple nice new resources from this project. [Radnomuser.me](https://randomuser.me/) which is a way to generate random people really easily. Another one is the [Animate on Scroll](https://michalsnik.github.io/aos/) library. I really need to start trying to use more libraries like this in my projects. There are too many times I try to do something by hand when I could probably just do a few lines from a library and make it 100 times easier.
 
 This project was mostly about learning the Animate On Scroll library. I remember I had a past project I tried to do an animate on scroll on my own but couldn't figure it out. This library would have come in handy back then.
+
+## Helpdesk Prototype
+
+A simple Flask-based prototype demonstrates how customer requests can be created and tracked.
+
+### Features
+- Create requests via HTTP POST `/requests`.
+- List all requests at `/requests` (for operators).
+- Update status or assign an employee with HTTP PUT `/requests/<id>`.
+- Check request status at `/requests/<id>`.
+
+This prototype keeps data in memory and includes a placeholder `fetch_email_requests` function where email integration could be added.
+
+### Running
+```
+pip install -r requirements.txt
+python server.py
+```
+
+This will start a development server on `http://localhost:5000`.
